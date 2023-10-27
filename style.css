@@ -12,9 +12,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(./bg.jpg) no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: rgb(105, 196, 164);
+background: linear-gradient(137deg, rgb(109, 188, 161) 0%, rgb(67, 138, 180) 100%);
 }
 
 .container {
@@ -23,13 +22,13 @@ body {
   min-height: 400px;
   padding: 30px;
   background: transparent;
-  border: 2px solid #e6b7eca1;
-  border-radius: 10px;
+  border: 2px solid #000000fe;
+  border-radius: 16px;
   backdrop-filter: blur(15px);
 }
 
 h1 {
-  color: #eee;
+  color: #000000;
   text-align: center;
   margin-bottom: 36px;
 }
@@ -40,14 +39,21 @@ h1 {
   margin-bottom: 25px;
 }
 
+.empty-message {
+  text-align: center;
+  margin: auto;
+  color: #000000;
+}
+
+
 .todo-input {
   flex: 1;
   outline: none;
   padding: 10px 10px 10px 20px;
   background-color: transparent;
-  border: 2px solid #e6b7eca1;
+  border: 2px solid #000000a1;
   border-radius: 30px;
-  color: #eee;
+  color: #000000;
   font-size: 16px;
   margin-right: 10px;
 }
@@ -59,8 +65,8 @@ h1 {
 .add-button {
   border: none;
   outline: none;
-  background: #e6b7eca1;
-  color: #fff;
+  background: #e6b7ec14;
+  color: #000000;
   font-size: 35px;
   cursor: pointer;
   border-radius: 40px;
@@ -79,11 +85,11 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #463c7b;
+  background-color: #ffffff06;
   border-radius: 5px;
   margin: 10px 0;
   padding: 10px 12px;
-  border: 2px solid #e6b7eca1;
+  border: 2px solid #000000a1;
   transition: all 0.2s ease;
 }
 
@@ -105,7 +111,7 @@ h1 {
   display: flex;
   align-items: center;
   font-family: 'Roboto', sans-serif;
-  color: #eee;
+  color: #000000;
 }
 
 .todo span {
@@ -121,7 +127,7 @@ span::before {
   position: absolute;
   margin-left: -30px;
   border-radius: 100px;
-  border: 2px solid #e6b7eca1;
+  border: 2px solid #000000a1;
 }
 
 input[type='checkbox'] {
@@ -179,10 +185,10 @@ input:checked + span {
 }
 
 .filter {
-  color: #eee;
+  color: #000000;
   padding: 5px 15px;
   border-radius: 100px;
-  border: 2px solid #e6b7eca1;
+  border: 2px solid #000000a1;
   transition: all 0.2s ease;
   cursor: pointer;
 }
@@ -193,7 +199,7 @@ input:checked + span {
 
 .delete-all {
   display: flex;
-  color: #eee;
+  color: #000000;
   padding: 7px 15px;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -201,5 +207,6 @@ input:checked + span {
 
 .delete-all:hover {
   border-radius: 5px;
-  background-color: #e6b7eca1;
+  background-color: #ff0000fa;
+  color:#eee;
 }
